@@ -5,7 +5,11 @@ import React, { useState } from "react";
 
 export function AboutMe(props) {
     const getToKnowMe = "Get To Know me";
-return ( <div id="about" class="about sec-pad row">
+return ( 
+
+
+<div id="about" class="about sec-pad row">
+
 <div class="main-container col-lg-12 col=col-md-6">
     <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">About()</span>
@@ -13,7 +17,7 @@ return ( <div id="about" class="about sec-pad row">
             
         </span>
     </h2>
-    <div class="about__content row">
+    < class="about__content row">
         <div class="about__content-main col-md-6">
             <h3 class="about__content-title">({getToKnowMe.length })</h3>
             <div class="about__content-details">
@@ -38,17 +42,20 @@ return ( <div id="about" class="about sec-pad row">
                     In addition to my technical skills, I believe that a well-rounded developer is not only skilled in their craft, but
                     also engaged with the world and the people around them.
                 </p>
-                <p class="about__content-details-para">
+                <p class="about__content-details-para"></p>
 
             </div>
+
             </div>
+
         
-            </div>
-            </div>
-            </div>
             
-            </div>
+
+           
+            
+            
             );
 
 };
+
 export default AboutMe;
