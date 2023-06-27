@@ -1,7 +1,13 @@
 import React from "react";
-import React, { useState } from "react";
-import aboutMe from "./aboutMe";
-function header(props) {
+// import React, { useState } from "react";
+import Projects from "./Projects";
+import aboutMe from "./AboutMe";
+import Contact from "./Contact";
+import Footer from "./Footer";
+
+import Navbar from "./navBar";
+import Resume from "./resume";
+export default function Header() {
   return (
     <header class="header navbar row" id="navbar">
       <div class="header__content navbar col-md-6">
@@ -72,4 +78,3 @@ function header(props) {
     </header>
   );
 }
-export default header;

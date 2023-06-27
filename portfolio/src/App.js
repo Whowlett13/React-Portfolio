@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AboutMe from "./components/aboutMe";
-import Contact from "./components/contact";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 import Header from "./components/header";
 import NavBar from "./components/navBar";
 import Resume from "./components/resume";
-import "./portfolio.css";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+// import "./portfolio.css";
 import "./portfolio.js";
 
 function App() {

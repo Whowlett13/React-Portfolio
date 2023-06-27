@@ -1,7 +1,13 @@
 import React from "react";
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import Header from "./header";
+import Navbar from "./navBar";
+import Resume from "./resume";
+import Projects from "./Projects";
 
-export function AboutMe(props) {
+export default function AboutMe() {
   const getToKnowMe = "Get To Know me";
   return (
     <div id="about" class="about sec-pad row">
@@ -41,5 +47,3 @@ export function AboutMe(props) {
     </div>
   );
 }
-
-export default AboutMe;
