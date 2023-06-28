@@ -8,7 +8,7 @@ import Resume from "./resume";
 import Projects from "./Projects";
 
 export default function AboutMe() {
-  const getToKnowMe = "Get To Know me";
+  // const getToKnowMe = "Get To Know me";
   return (
     <div id="about" class="about sec-pad row">
       <div class="main-container col-lg-12 col=col-md-6">
@@ -18,7 +18,7 @@ export default function AboutMe() {
         </h2>
         <div class="about__content row">
           <div class="about__content-main col-md-6">
-            <h3 class="about__content-title">({getToKnowMe.length})</h3>
+            <h3 class="about__content-title"></h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
                 My name is

@@ -2,7 +2,7 @@ import React from "react";
 // import React, { useState } from "react";
 import aboutMe from "./AboutMe";
 import Contact from "./Contact";
-
+import GitHubLogo from "./assets/github-ico.png";
 import Header from "./header";
 import Navbar from "./navBar";
 import Resume from "./resume";
@@ -24,7 +24,7 @@ export default function Footer() {
               >
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
+                  src="./assets/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
@@ -33,11 +33,7 @@ export default function Footer() {
                 rel="noreferrer"
                 href="https://github.com/Whowlett13"
               >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
+                <img class="main-footer__icon" src={GitHubLogo} alt="icon" />
               </a>
 
               <a
@@ -47,7 +43,7 @@ export default function Footer() {
               >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
+                  src="./assets/insta-ico.png"
                   alt="icon"
                 />
               </a>

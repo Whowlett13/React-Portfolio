@@ -25,13 +25,13 @@ export default function Contact() {
                 Name
               </label>
               <input
-                required
+                // required
                 placeholder="Enter Your Name"
                 type="text"
                 class="contact__form-input"
                 name="name"
                 id="name"
-                required
+                // required
               />
             </div>
             <div class="contact__form-field">
@@ -39,13 +39,13 @@ export default function Contact() {
                 Email
               </label>
               <input
-                required
+                // required
                 placeholder="Enter Your Email"
                 type="text"
                 class="contact__form-input"
                 name="email"
                 id="email"
-                required
+                // required
               />
             </div>
             <div class="contact__form-field">

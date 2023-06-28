@@ -1,10 +1,11 @@
 import React from "react";
+import "./NavBar.css";
 // import React, { useState } from "react";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./header";
-import Navbar from "./navBar";
+// import NavBar from "./navBar";
 import Resume from "./resume";
 import Projects from "./Projects";
 export default function NavBar({ currentPage, handlePageChange }) {
@@ -13,13 +14,16 @@ export default function NavBar({ currentPage, handlePageChange }) {
       <div class="header__content navbar col-md-6">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/profile picture.jpg"
-              class="header__logo-img"
-            />
+            <img src="./assets/profile picture.jpg" class="header__logo-img" />
           </div>
           <span class="header__logo-sub" href="./index.html#about">
-            Wyatt Howlett
+            <a
+              onClick={() => handlePageChange("AboutMe")}
+              className={currentPage === "AboutMe"}
+              class="header__link"
+            >
+              Wyatt Howlett{" "}
+            </a>
           </span>
         </div>
         <div class="menuBtn">
@@ -30,7 +34,9 @@ export default function NavBar({ currentPage, handlePageChange }) {
                   <a
                     onClick={() => handlePageChange("Home")}
                     className={
-                      currentPage === "Home" ? "nav-link active" : "nav-link"
+                      currentPage === "Home"
+                        ? "nav-link active header__link"
+                        : "nav-link header__link"
                     }
                     class="header__link"
                   >
@@ -42,7 +48,9 @@ export default function NavBar({ currentPage, handlePageChange }) {
                   <a
                     onClick={() => handlePageChange("AboutMe")}
                     className={
-                      currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+                      currentPage === "AboutMe"
+                        ? "nav-link active header__link"
+                        : "nav-link header__link"
                     }
                     class="header__link"
                   >
@@ -54,8 +62,8 @@ export default function NavBar({ currentPage, handlePageChange }) {
                     onClick={() => handlePageChange("Projects")}
                     className={
                       currentPage === "Projects"
-                        ? "nav-link active"
-                        : "nav-link"
+                        ? "nav-link active header__link"
+                        : "nav-link header__link"
                     }
                     class="header__link"
                   >
@@ -66,7 +74,9 @@ export default function NavBar({ currentPage, handlePageChange }) {
                   <a
                     onClick={() => handlePageChange("Contact")}
                     className={
-                      currentPage === "Contact" ? "nav-link active" : "nav-link"
+                      currentPage === "Contact"
+                        ? "nav-link active header__link"
+                        : "nav-link header__link"
                     }
                     class="header__link"
                   >

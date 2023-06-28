@@ -9,72 +9,63 @@ import Navbar from "./navBar";
 import Resume from "./resume";
 export default function Header() {
   return (
-    <header class="header navbar row" id="navbar">
-      <div class="header__content navbar col-md-6">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/profile picture.jpg"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub" href="./index.html#about">
-            Wyatt Howlett
-          </span>
-        </div>
-        <div class="menuBtn">
-          {/* <!-- <div class="menuBtn_Burger"> --> */}
-          <div class="navBarLinks col-md-2">
-            <div class="header__main">
-              <ul class="header__links">
-                <li class="header__link-wrapper nav-item ">
-                  <a href="./index.html" class="header__link">
-                    {" "}
-                    Home{" "}
-                  </a>
-                </li>
-                <li class="header__link-wrapper nav-item">
-                  <a href="./index.html#about" class="header__link">
-                    About{" "}
-                  </a>
-                </li>
-                <li class="header__link-wrapper nav-item">
-                  <a href="./index.html#projects" class="header__link">
-                    Projects
-                  </a>
-                </li>
-                <li class="header__link-wrapper nav-item">
-                  <a href="./index.html#contact" class="header__link">
-                    {" "}
-                    Contact{" "}
-                  </a>
-                </li>
-              </ul>
+    <section class="home-hero overflow-hidden">
+      <div id="particles" class="col-sm-12">
+        <div id="webcoderskull">
+          <div class="home-hero__content overflow-auto">
+            <h1 class="heading-primary">Hello! I'm Wyatt Howlett:</h1>
+            <div class="home-hero__info .text-white">
+              <p class="text-primary .text-white">FullStack Web Developer</p>
+            </div>
+            <div class="home-hero__cta">
+              <a href="./index.html#projects" class="btn btn--bg">
+                Projects
+              </a>
             </div>
           </div>
-          <div class="header__sm-menu">
-            <div class="header__sm-menu-content">
-              <ul class="header__sm-menu-links">
-                <li class="header__sm-menu-link">
-                  <a href="./index.html"> Home </a>
-                </li>
+          <div class="home-hero__socials">
+            <div class="home-hero__social">
+              <a
+                href="https://www.linkedin.com/in/wyatt-howlett-399849254/"
+                class="home-hero__social-icon-link"
+              >
+                <img
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                  class="home-hero__social-icon"
+                />
+              </a>
+            </div>
+            <div class="home-hero__social">
+              <a
+                href="https://github.com/Whowlett13"
+                class="home-hero__social-icon-link"
+              >
+                <img
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                  class="home-hero__social-icon"
+                />
+              </a>
+            </div>
 
-                <li class="header__sm-menu-link">
-                  <a href="./index.html#about"> About Me </a>
-                </li>
-
-                <li class="header__sm-menu-link">
-                  <a href="./index.html#projects"> Projects </a>
-                </li>
-
-                <li class="header__sm-menu-link">
-                  <a href="./index.html#contact"> Contact </a>
-                </li>
-              </ul>
+            <div class="home-hero__social">
+              <a
+                href="https://www.instagram.com/wyattever/"
+                class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+              >
+                <img
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                  class="home-hero__social-icon"
+                />
+              </a>
             </div>
           </div>
+
+          <div class="home-hero__mouse-scroll-cont"></div>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
