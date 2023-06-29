@@ -11,6 +11,8 @@
 
 ## Description Of Functionality:
 
+- A React portfolio to display projects, contact information for future employers.
+
 ## Link To Deployed Application:
 
 - Link: https://github.com/Whowlett13/React-Portfolio

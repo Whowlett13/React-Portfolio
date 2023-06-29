@@ -20,11 +20,11 @@ export default function Header() {
             <div class="home-hero__info .text-white">
               <p class="text-primary .text-white">FullStack Web Developer</p>
             </div>
-            <div class="home-hero__cta">
+            {/* <div class="home-hero__cta">
               <a href="./index.html#projects" class="btn btn--bg">
                 Projects
               </a>
-            </div>
+            </div> */}
           </div>
           <div class="home-hero__socials">
             <div class="home-hero__social">
