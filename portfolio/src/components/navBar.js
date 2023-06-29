@@ -5,7 +5,7 @@ import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./header";
-// import NavBar from "./navBar";
+import ProfilePic from "./assets/profile-picture.jpg";
 import Resume from "./resume";
 import Projects from "./Projects";
 export default function NavBar({ currentPage, handlePageChange }) {
@@ -14,7 +14,7 @@ export default function NavBar({ currentPage, handlePageChange }) {
       <div class="header__content navbar col-md-6">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
-            <img src="./assets/profile picture.jpg" class="header__logo-img" />
+            <img src={ProfilePic} class="header__logo-img" />
           </div>
           <span class="header__logo-sub" href="./index.html#about">
             <a

@@ -3,6 +3,8 @@ import React from "react";
 import aboutMe from "./AboutMe";
 import Contact from "./Contact";
 import GitHubLogo from "./assets/github-ico.png";
+import InstagramLogo from "./assets/insta-ico.png";
+import LinkedInLogo from "./assets/linkedin-ico.png";
 import Header from "./header";
 import Navbar from "./navBar";
 import Resume from "./resume";
@@ -22,11 +24,7 @@ export default function Footer() {
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/wyatt-howlett-399849254/"
               >
-                <img
-                  class="main-footer__icon"
-                  src="./assets/linkedin-ico.png"
-                  alt="icon"
-                />
+                <img class="main-footer__icon" src={LinkedInLogo} alt="icon" />
               </a>
               <a
                 target="_blank"
@@ -43,7 +41,7 @@ export default function Footer() {
               >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/insta-ico.png"
+                  src={InstagramLogo}
                   alt="icon"
                 />
               </a>

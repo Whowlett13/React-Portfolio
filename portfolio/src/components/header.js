@@ -5,6 +5,9 @@ import aboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+import GitHubLogo from "./assets/github-ico.png";
+import InstagramLogo from "./assets/insta-ico.png";
+import LinkedInLogo from "./assets/linkedin-ico.png";
 import Navbar from "./navBar";
 import Resume from "./resume";
 export default function Header() {
@@ -30,7 +33,7 @@ export default function Header() {
                 class="home-hero__social-icon-link"
               >
                 <img
-                  src="./assets/png/linkedin-ico.png"
+                  src={LinkedInLogo}
                   alt="icon"
                   class="home-hero__social-icon"
                 />
@@ -42,7 +45,7 @@ export default function Header() {
                 class="home-hero__social-icon-link"
               >
                 <img
-                  src="./assets/png/github-ico.png"
+                  src={GitHubLogo}
                   alt="icon"
                   class="home-hero__social-icon"
                 />
@@ -55,7 +58,7 @@ export default function Header() {
                 class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
               >
                 <img
-                  src="./assets/png/insta-ico.png"
+                  src={InstagramLogo}
                   alt="icon"
                   class="home-hero__social-icon"
                 />

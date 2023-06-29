@@ -5,7 +5,11 @@ import Footer from "./Footer";
 import Header from "./header";
 import Navbar from "./navBar";
 import Resume from "./resume";
-
+import BobsBurg from "./assets/Bobs-Burgers-Application.png";
+import CodeQuiz from "./assets/CodeQuiz.png";
+import WeatherApp from "./assets/WeatherApp.png";
+import WorkDay from "./assets/Work-Day-Scheduler.png";
+import TextEditor from "./assets/justanothertexteditor.png";
 export default function Projects({ currentPage, handlePageChange }) {
   return (
     <section id="projects" class="projects sec-pad">
@@ -19,7 +23,7 @@ export default function Projects({ currentPage, handlePageChange }) {
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/Bobs Burgers Application.png"
+                src={BobsBurg}
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
@@ -53,7 +57,7 @@ export default function Projects({ currentPage, handlePageChange }) {
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/Screenshot (228).png"
+                src={CodeQuiz}
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
@@ -78,7 +82,7 @@ export default function Projects({ currentPage, handlePageChange }) {
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/Screenshot (230).png"
+                  src={WeatherApp}
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
@@ -105,7 +109,7 @@ export default function Projects({ currentPage, handlePageChange }) {
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/Work Day Scheduler.png"
+                  src={WorkDay}
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
@@ -133,7 +137,7 @@ export default function Projects({ currentPage, handlePageChange }) {
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/justanothertexteditor.png"
+                  src={TextEditor}
                   alt="Software Screenshot"
                   class="projects__row-img"
                   loading="lazy"
